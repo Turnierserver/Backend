@@ -1,0 +1,9 @@
+#pragma once
+
+#define BACKEND_MAJOR @backend_MAJOR@
+#define BACKEND_MINOR @backend_MINOR@
+#define BACKEND_PATCH @backend_PATCH@
+#define BACKEND_VERSION ((@backend_MAJOR@ << 16) | (@backend_MINOR@ << 8) | @backend_PATCH@)
+#define BACKEND_VERSION_STR "@backend_VERSION@"
+
+#include <QtGlobal>
