@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+    - docker
+
+install:
+    - docker pull finalduty/archlinux
+
+script:
+    - docker build -t turnierserver/backend .
