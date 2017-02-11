@@ -1,0 +1,9 @@
+.directory
+*~
+\#*#
+*.kate_swp
+*.orig
+
+build/
+build-*/
+*.user
