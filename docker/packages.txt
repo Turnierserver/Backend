@@ -1,6 +1,7 @@
 acl
 attr
 avahi
+bash
 bzip2
 coreutils
 cracklib
@@ -8,12 +9,14 @@ dbus
 e2fsprogs
 expat
 filesystem
+findutils
 gcc-libs
 gdbm
 glib2
 glibc
 gmp
 gnutls
+grep
 hwids
 iana-etc
 icu
@@ -47,6 +50,7 @@ linux-api-headers
 llvm-libs
 lz4
 mtdev
+ncurses
 nettle
 openssl
 p11-kit
