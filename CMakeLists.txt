@@ -29,6 +29,7 @@ if(CMAKE_BUILD_TYPE MATCHES Debug)
 endif()
 
 configure_file(backend.h.in backend.h @ONLY)
-include_directories(${CMAKE_CURRENT_BINARY_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR})
 
+add_subdirectory(QtFtp)
 add_subdirectory(src)
