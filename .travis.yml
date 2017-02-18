@@ -7,4 +7,4 @@ install:
     - docker pull finalduty/archlinux
 
 script:
-    - docker build -t turnierserver/backend -f docker/Dockerfile .
+    - docker build -t turnierserver/backend .
