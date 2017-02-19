@@ -9,7 +9,7 @@ RUN CC=clang CXX=clang++ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX
     make -j2 install; \
     sed -i 's|HoldPkg|#HoldPkg|g' /etc/pacman.conf; \
     pacman -Q | awk '{print $1}' >/tmp/packages.txt; \
-    cat docker/packages.txt | while read line; do echo -n " -e '$line' "; done | xargs grep --invert-match /tmp/packages.txt >/tmp/remove.txt; \
+    cat packages.txt | while read line; do echo -n " -e '$line' "; done | xargs grep --invert-match /tmp/packages.txt >/tmp/remove.txt; \
     cat /tmp/remove.txt | pacman --noconfirm -Rdd -; \
     rm -rf /tmp/*; \
     rm -rf /usr/share/man/* /usr/include/*; \
